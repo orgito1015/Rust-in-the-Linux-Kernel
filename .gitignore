@@ -1,3 +1,11 @@
+# OS / editor junk
 .DS_Store
-.vscode/
+Thumbs.db
+
+# Tools
 .idea/
+.vscode/
+
+# Caches
+.cache/
+target/

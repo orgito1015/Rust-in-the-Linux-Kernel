@@ -1,7 +1,26 @@
 name: CI
-on: [push]
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
 jobs:
-  build:
+  lint-and-links:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Setup Node (markdownlint)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm i -g markdownlint-cli
+      - name: Lint Markdown
+        run: markdownlint '**/*.md' --ignore node_modules
+
+      - name: Setup Rust (for lychee)
+        uses: dtolnay/rust-toolchain@stable
+      - name: Install lychee
+        run: cargo install lychee
+      - name: Check Links
+        run: lychee --no-progress --max-concurrency 8 --exclude-file .lycheeignore .
