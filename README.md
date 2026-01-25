@@ -1,4 +1,4 @@
-![Rust in the Linux Kernel](./Rust%20in%20the%20Linux%20kernel.png)
+![Rust in the Linux Kernel project banner](./Rust%20in%20the%20Linux%20kernel.png)
 
 # Rust in the Linux Kernel — Open Research
 
