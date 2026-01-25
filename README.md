@@ -1,3 +1,5 @@
+![Rust in the Linux Kernel](./Rust%20in%20the%20Linux%20kernel.png)
+
 # Rust in the Linux Kernel — Open Research
 
 [![CI](https://img.shields.io/github/actions/workflow/status/OWNER/rust-in-linux-kernel-research/ci.yml?label=CI)](./.github/workflows/ci.yml)
