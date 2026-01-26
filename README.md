@@ -2,11 +2,12 @@
 
 # Rust in the Linux Kernel — Open Research
 
-[![CI](https://img.shields.io/github/actions/workflow/status/OWNER/rust-in-linux-kernel-research/ci.yml?label=CI)](./.github/workflows/ci.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/orgito1015/Rust-in-the-Linux-Kernel/ci.yml?label=CI)](./.github/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![Good First Issue](https://img.shields.io/github/issues/OWNER/rust-in-linux-kernel-research/good%20first%20issue.svg)](https://github.com/OWNER/rust-in-linux-kernel-research/labels/good%20first%20issue)
+[![Good First Issue](https://img.shields.io/github/issues/orgito1015/Rust-in-the-Linux-Kernel/good%20first%20issue.svg)](https://github.com/orgito1015/Rust-in-the-Linux-Kernel/labels/good%20first%20issue)
 
-A community-driven, structured research project on **Rust in the Linux kernel**: motivation, history, technical integration, toolchains, contribution paths, challenges, and future directions.
+A community-driven, structured research project on **Rust in the Linux kernel**: motivation, history, technical
+integration, toolchains, contribution paths, challenges, and future directions.
 
 ## Goals
 - Produce a **clear, citable knowledge base** (docs/) about Rust-for-Linux.
@@ -20,8 +21,8 @@ A community-driven, structured research project on **Rust in the Linux kernel**:
 
 ## Quick Start
 ```bash
-git clone https://github.com/OWNER/rust-in-linux-kernel-research.git
-cd rust-in-linux-kernel-research
+git clone https://github.com/orgito1015/Rust-in-the-Linux-Kernel.git
+cd Rust-in-the-Linux-Kernel
 ./scripts/setup-dev.sh
 ```
 

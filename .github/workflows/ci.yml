@@ -14,13 +14,38 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm i -g markdownlint-cli
+      
+      - name: Cache npm packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      
+      - name: Install markdownlint
+        run: npm i -g markdownlint-cli
+      
       - name: Lint Markdown
         run: markdownlint '**/*.md' --ignore node_modules
 
       - name: Setup Rust (for lychee)
         uses: dtolnay/rust-toolchain@stable
+      
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-
+      
       - name: Install lychee
-        run: cargo install lychee
+        run: cargo install lychee --locked || true
+      
       - name: Check Links
         run: lychee --no-progress --max-concurrency 8 --exclude-file .lycheeignore .
