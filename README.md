@@ -6,7 +6,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Good First Issue](https://img.shields.io/github/issues/orgito1015/Rust-in-the-Linux-Kernel/good%20first%20issue.svg)](https://github.com/orgito1015/Rust-in-the-Linux-Kernel/labels/good%20first%20issue)
 
-A community-driven, structured research project on **Rust in the Linux kernel**: motivation, history, technical integration, toolchains, contribution paths, challenges, and future directions.
+A community-driven, structured research project on **Rust in the Linux kernel**: motivation, history, technical
+integration, toolchains, contribution paths, challenges, and future directions.
 
 ## Goals
 - Produce a **clear, citable knowledge base** (docs/) about Rust-for-Linux.

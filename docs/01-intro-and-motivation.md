@@ -2,7 +2,8 @@
 
 ## Overview
 
-Rust's integration into the Linux kernel represents one of the most significant developments in systems programming in recent decades. This document explores the motivation behind this initiative and the problems it aims to solve.
+Rust's integration into the Linux kernel represents one of the most significant developments in systems programming in
+recent decades. This document explores the motivation behind this initiative and the problems it aims to solve.
 
 ## Why Rust for the Kernel?
 
@@ -15,7 +16,8 @@ The Linux kernel, like most systems software written in C, is susceptible to mem
 - **Buffer Overflows**: Writing beyond allocated memory boundaries
 - **Data Races**: Concurrent access to shared memory without synchronization
 
-Studies have shown that approximately **70% of security vulnerabilities** in the Linux kernel are memory safety issues. Rust's ownership system and borrow checker eliminate these classes of bugs at compile time.
+Studies have shown that approximately **70% of security vulnerabilities** in the Linux kernel are memory safety issues.
+Rust's ownership system and borrow checker eliminate these classes of bugs at compile time.
 
 ### Safer Concurrency
 
@@ -81,4 +83,6 @@ It's important to understand what Rust-for-Linux is not trying to achieve:
 
 ## Conclusion
 
-Rust offers a compelling path forward for improving the Linux kernel's security and reliability while maintaining its legendary performance. The motivation is clear: reduce memory safety vulnerabilities that have plagued systems software for decades, while providing modern tools for kernel developers.
+Rust offers a compelling path forward for improving the Linux kernel's security and reliability while maintaining its
+legendary performance. The motivation is clear: reduce memory safety vulnerabilities that have plagued systems software
+for decades, while providing modern tools for kernel developers.

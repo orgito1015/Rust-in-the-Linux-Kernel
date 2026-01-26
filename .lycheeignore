@@ -1,2 +1,21 @@
 # Add domains or URL patterns to ignore in link checks
+
+# Example domain
 example.com
+
+# Localhost and internal URLs
+localhost
+127.0.0.1
+
+# Some kernel.org URLs may have temporary access issues
+# git.kernel.org
+
+# Video platforms may block automated checks
+# youtube.com
+# youtube-nocookie.com
+
+# Mailing list archives might rate-limit
+# lore.kernel.org
+
+# GitHub URLs (these are checked by GitHub itself)
+# github.com
