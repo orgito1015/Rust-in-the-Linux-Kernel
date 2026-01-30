@@ -452,7 +452,16 @@
 - **March 2024**: Linux 6.8 with expanded subsystem support
 - **May 2024**: Linux 6.9 continued growth
 - **July 2024**: Linux 6.10 more real-world drivers
-- **Ongoing**: Active development and adoption
+- **September 2024**: Linux 6.11 DRM subsystem support
+- **November 2024**: Linux 6.12 enhanced abstractions
+
+### 2025-2026
+
+- **Ongoing**: Rapid maturation of Rust ecosystem
+- **Production use**: Multiple drivers in production
+- **Community growth**: Expanding contributor base
+- **Tool improvements**: Better IDE support and debugging
+- **Enterprise interest**: Growing industry adoption
 
 ## Learning Paths
 
@@ -562,6 +571,6 @@ The key is to start with the basics and gradually build up knowledge through pra
 
 ---
 
-**Last Updated**: January 2024
+**Last Updated**: January 2026
 
 *This document is a living resource. Contributions and updates are welcome!*

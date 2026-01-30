@@ -93,12 +93,49 @@ Support came from various organizations:
 - Improved build system
 - Better documentation
 
-### Linux 6.8+ (2024-Present)
+### Linux 6.8 (March 2024)
 
-- Expanding Rust usage in more subsystems
-- Real-world driver implementations
-- Improved tooling and development experience
-- Growing ecosystem of Rust kernel modules
+- Enhanced abstractions for device drivers
+- Improved error handling patterns
+- Better support for platform devices
+- Rust minimum version updated to 1.73.0
+
+### Linux 6.9 (May 2024)
+
+- New Rust bindings for more subsystems
+- Performance optimizations in Rust abstractions
+- Additional driver examples and templates
+- Improved integration with kernel testing frameworks
+
+### Linux 6.10 (July 2024)
+
+- Expanded filesystem support abstractions
+- Enhanced networking subsystem bindings
+- Better documentation for Rust API
+- Community contributions increasing
+
+### Linux 6.11 (September 2024)
+
+- DRM (Direct Rendering Manager) subsystem support
+- Rust NVMe driver improvements
+- Additional safe wrappers for kernel APIs
+- Growing adoption in ARM and RISC-V platforms
+
+### Linux 6.12 (November 2024)
+
+- PCI subsystem abstractions enhanced
+- Scheduler and task abstractions improved
+- Memory management abstractions refined
+- Rust minimum version updated to 1.78.0
+
+### Linux 6.13+ (2025-2026)
+
+- Continued expansion of Rust in production drivers
+- Mature abstractions for major subsystems
+- Integration with eBPF and tracing
+- Focus on performance and safety validation
+- Growing number of out-of-tree Rust modules
+- Enterprise adoption beginning to increase
 
 ## Key Technical Achievements
 
@@ -124,12 +161,15 @@ Support came from various organizations:
 - Real security benefits demonstrated
 - Major companies showing interest
 
-### Current State (2024+)
+### Current State (2025-2026)
 
-- Established as a legitimate kernel language
-- Growing number of contributors
-- Active development and improvements
-- Realistic expectations about scope and timeline
+- Rust firmly established as a kernel language
+- Multiple production drivers written in Rust
+- Major subsystems have Rust abstractions
+- Active development community with 100+ contributors
+- Regular improvements in every kernel release
+- Industry adoption growing in safety-critical systems
+- Academic research validating safety benefits
 
 ## Timeline Summary
 
@@ -139,7 +179,8 @@ Support came from various organizations:
 | 2021 | Project launch, RFC iterations |
 | Dec 2022 | Linux 6.1 - Initial Rust support merged |
 | 2023 | Continuous improvements across 6.2-6.7 |
-| 2024+ | Expansion and real-world adoption |
+| 2024 | Major expansion: 6.8-6.12, production drivers |
+| 2025-2026 | Maturation, enterprise adoption, multiple subsystems |
 
 ## Key Figures and Contributors
 
