@@ -2,7 +2,8 @@
 
 ## Context
 
-Analyzing the real-world impact of Rust's memory safety on Linux kernel security over the past 3+ years since the initial merge in 6.1.
+Analyzing the real-world impact of Rust's memory safety on Linux kernel security over the past 3+ years
+since the initial merge in 6.1.
 
 ## Observations
 

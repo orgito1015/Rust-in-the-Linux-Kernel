@@ -2,7 +2,8 @@
 
 **Last Updated**: January 2026
 
-This roadmap outlines the research phases for understanding and documenting Rust's integration into the Linux kernel. The project spans from foundational knowledge through advanced analysis and future planning.
+This roadmap outlines the research phases for understanding and documenting Rust's integration into the
+Linux kernel. The project spans from foundational knowledge through advanced analysis and future planning.
 
 ## Current Status
 

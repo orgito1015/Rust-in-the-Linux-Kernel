@@ -12,7 +12,8 @@ This file contains links and summaries of academic papers related to Rust in the
 
 **Link**: [ACM Digital Library](https://dl.acm.org/doi/10.1145/3418295)
 
-**Abstract**: Rust is a new systems programming language that combines the performance and low-level control of languages like C with compile-time guarantees about memory safety and data race freedom.
+**Abstract**: Rust is a new systems programming language that combines the performance and low-level control
+of languages like C with compile-time guarantees about memory safety and data race freedom.
 
 **Key Takeaways**:
 - Formal semantics of Rust's ownership system
