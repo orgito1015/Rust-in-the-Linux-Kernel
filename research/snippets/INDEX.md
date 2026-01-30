@@ -82,19 +82,19 @@ When adding new snippets:
 - 📋 Memory allocation patterns (planned)
 - 📋 Error handling (planned)
 
-### Future Additions
+### Future Additions (Planned)
 
 We're looking to add examples for:
 
-- Network device drivers
-- Block device drivers  
-- Filesystem operations
-- Interrupt handlers
-- DMA operations
-- Device tree interaction
-- GPIO and hardware control
-- Power management
-- Debugging techniques
+- 📋 Network device drivers
+- 📋 Block device drivers  
+- 📋 Filesystem operations
+- 📋 Interrupt handlers
+- 📋 DMA operations
+- 📋 Device tree interaction
+- 📋 GPIO and hardware control
+- 📋 Power management
+- 📋 Debugging techniques
 
 ## Conventions
 

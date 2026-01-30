@@ -32,8 +32,8 @@ use kernel::prelude::*;
 module! {
     type: RustMinimal,
     name: "rust_minimal",
-    author: "Rust for Linux Contributors",
-    description: "A minimal Rust kernel module example",
+    author: "Research Project Example",
+    description: "A minimal Rust kernel module example for learning",
     license: "GPL",
 }
 

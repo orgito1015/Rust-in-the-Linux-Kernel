@@ -115,10 +115,10 @@ Linux kernel. The project spans from foundational knowledge through advanced ana
 
 ### 2026 Goals
 
-- Q1: Update all documentation with latest kernel releases
-- Q2: Add comprehensive code snippet library
-- Q3: Complete academic reference collection
-- Q4: Publish research findings and analysis
+**Q1**: Update all documentation with latest kernel releases
+**Q2**: Add comprehensive code snippet library  
+**Q3**: Complete academic reference collection
+**Q4**: Publish research findings and analysis
 
 ### Long-term Vision (2027+)
 

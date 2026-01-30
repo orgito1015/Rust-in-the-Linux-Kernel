@@ -171,24 +171,6 @@ of languages like C with compile-time guarantees about memory safety and data ra
 
 ---
 
-### An Empirical Study of Rust for Linux Kernel Development (2024)
-
-**Authors**: Various kernel developers (in progress)
-
-**Venue**: Conference proceedings expected
-
-**Link**: TBD
-
-**Abstract**: Empirical analysis of Rust's impact on kernel development productivity and safety.
-
-**Key Takeaways** (preliminary):
-- Learning curve manageable for experienced developers
-- Bug rates lower in Rust code
-- Development velocity comparable after initial learning
-- Community reception positive
-
-**Relevance to Project**: Direct measurement of Rust's impact on Linux kernel.
-
 ---
 
 ## Verification and Formal Methods
@@ -223,6 +205,13 @@ This is a living document. Additional papers to include:
 - Industry experience reports
 - Performance benchmarking studies
 - Formal verification of kernel Rust code
+
+### In Progress / Forthcoming
+
+**An Empirical Study of Rust for Linux Kernel Development (Expected 2024-2025)**
+- Empirical analysis of Rust's impact (in progress)
+- Check Linux Plumbers Conference proceedings
+- Preliminary findings available on mailing lists
 
 ## How to Contribute
 

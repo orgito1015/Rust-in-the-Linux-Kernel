@@ -1,5 +1,8 @@
 # Memory Safety Impact Analysis - 2026-01-30
 
+**Note**: This is preliminary research analysis based on available public information.
+Claims require verification with concrete data sources.
+
 ## Context
 
 Analyzing the real-world impact of Rust's memory safety on Linux kernel security over the past 3+ years
@@ -9,11 +12,11 @@ since the initial merge in 6.1.
 
 ### Security Vulnerability Trends
 
-Since Linux 6.1 introduced Rust support:
+Since Linux 6.1 introduced Rust support (preliminary observations):
 
-1. **New Rust code**: Zero memory safety vulnerabilities reported in Rust-written drivers
+1. **New Rust code**: No widely reported memory safety vulnerabilities in Rust-written drivers (requires verification)
 2. **Comparison with C**: Equivalent C drivers from the same period show typical memory safety bug rates
-3. **CVE Analysis**: No CVEs filed against pure Rust kernel modules through 2025
+3. **CVE Analysis**: Further research needed to compile comprehensive CVE statistics
 
 ### Performance Impact
 

@@ -166,10 +166,14 @@ Support came from various organizations:
 - Rust firmly established as a kernel language
 - Multiple production drivers written in Rust
 - Major subsystems have Rust abstractions
-- Active development community with 100+ contributors
+- Active and growing development community
 - Regular improvements in every kernel release
-- Industry adoption growing in safety-critical systems
+- Industry adoption increasing in safety-critical systems
 - Academic research validating safety benefits
+
+> Note: Specific statistics and claims in this document represent general trends observed through
+> kernel releases and community discussions. For precise numbers and citations, refer to official
+> kernel documentation and mailing list archives.
 
 ## Timeline Summary
 
