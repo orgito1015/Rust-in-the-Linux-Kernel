@@ -9,6 +9,15 @@
 A community-driven, structured research project on **Rust in the Linux kernel**: motivation, history, technical
 integration, toolchains, contribution paths, challenges, and future directions.
 
+**Status**: Active research project tracking Rust's integration into Linux mainline (6.1+) through 2026.
+
+## Project Status (2026)
+
+- 📚 **Comprehensive Documentation**: 8 detailed documents covering all aspects of Rust-for-Linux
+- 🔬 **Active Research**: Tracking developments from Linux 6.1 (2022) through 6.13+ (2026)
+- 📊 **Growing Content**: Code snippets, academic references, and research notes
+- 🌱 **Community-Driven**: Open to contributions from developers and researchers worldwide
+
 ## Goals
 - Produce a **clear, citable knowledge base** (docs/) about Rust-for-Linux.
 - Maintain **living roadmap** of research tasks (see [ROADMAP.md](./ROADMAP.md)).
@@ -31,10 +40,26 @@ We welcome contributions of all kinds—notes, links, corrections, code snippets
 Read [CONTRIBUTING.md](./CONTRIBUTING.md) and our [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## Project Layout
-- `docs/` — curated, high-level documents
+- `docs/` — curated, high-level documents (8 comprehensive guides)
 - `research/` — raw notes, references, and exploratory work
+  - `notes/` — research observations and analysis
+  - `references/` — academic papers and bibliography
+  - `snippets/` — code examples and demonstrations
 - `scripts/` — helper scripts (link checks, setup)
 - `.github/` — issues templates, PR template, CI workflows
+
+## Documentation
+
+### Core Documents
+
+1. **[Introduction & Motivation](./docs/01-intro-and-motivation.md)** — Why Rust for the kernel?
+2. **[Historical Background](./docs/02-history.md)** — Timeline from 2019 through 2026
+3. **[Technical Overview](./docs/03-technical-overview.md)** — Kbuild integration and FFI
+4. **[Toolchain & Dependencies](./docs/04-toolchain-and-deps.md)** — Build requirements
+5. **[Development & Contribution](./docs/05-dev-and-contrib.md)** — How to get started
+6. **[Challenges & Limitations](./docs/06-challenges-and-limits.md)** — Current obstacles
+7. **[Future Directions](./docs/07-future-directions.md)** — What's next?
+8. **[Resources & References](./docs/08-resources.md)** — Links, talks, and learning materials
 
 ## License
 MIT — see [LICENSE](./LICENSE).

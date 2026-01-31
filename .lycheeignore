@@ -7,6 +7,10 @@ example.com
 localhost
 127.0.0.1
 
+# Academic publishers (may be paywalled or require authentication)
+dl.acm.org
+arxiv.org
+
 # Some kernel.org URLs may have temporary access issues
 # git.kernel.org
 
