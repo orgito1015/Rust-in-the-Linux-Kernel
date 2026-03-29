@@ -55,11 +55,11 @@ Linux kernel. The project spans from foundational knowledge through advanced ana
 
 ### Technical Deep Dives
 
-- [ ] Memory allocator integration patterns
-- [ ] Lock-free data structure implementations
-- [ ] DMA and hardware interaction safety
-- [ ] Interrupt handler patterns in Rust
-- [ ] Error propagation mechanisms
+- [x] Memory allocator integration patterns
+- [x] Lock-free data structure implementations
+- [x] DMA and hardware interaction safety
+- [x] Interrupt handler patterns in Rust
+- [x] Error propagation mechanisms
 
 ### Community & Process
 
