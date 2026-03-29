@@ -240,8 +240,13 @@ impl<T> KernelArc<T> {
 
 impl<T> Clone for KernelArc<T> {
     fn clone(&self) -> Self {
-        // Relaxed ordering: the increment only needs to be eventually visible;
-        // the `Acquire` in `drop` synchronises with this store.
+        // Relaxed ordering on increment: only atomicity is required here.
+        // There is no ordering relationship between this increment and any
+        // other memory accesses — we are simply bumping a counter.
+        // The actual memory synchronisation is established by the
+        // Release store in `drop` (fetch_sub) and the corresponding
+        // Acquire fence in the last owner's `drop`, ensuring all writes
+        // are visible before the allocation is freed.
         // SAFETY: inner is valid.
         unsafe { self.inner.as_ref() }
             .refcount

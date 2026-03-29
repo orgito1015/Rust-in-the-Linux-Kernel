@@ -97,6 +97,9 @@ let obj_ptr = cache.alloc()?;
 **Code snippet**: [`research/snippets/concurrency/lock_free.rs`](../research/snippets/concurrency/lock_free.rs)
 
 ### Lock-Free Overview
+
+Lock-free algorithms improve scalability on multi-core systems by eliminating mutex contention.
+Rust's `core::sync::atomic` module provides the building blocks: `AtomicBool`, `AtomicU32`,
 `AtomicUsize`, `AtomicPtr`, and the compare-and-swap (CAS) primitive.
 
 ### Memory Ordering
@@ -213,6 +216,9 @@ let old_ptr = unsafe { protected.replace(new_value)? };
 **Code snippet**: [`research/snippets/drivers/dma_operations.rs`](../research/snippets/drivers/dma_operations.rs)
 
 ### DMA Overview
+
+Direct Memory Access (DMA) is how hardware peripherals read and write system memory without CPU
+involvement. Getting DMA right is notoriously difficult, but Rust's type system can enforce key
 safety invariants at compile time.
 
 ### DMA Types
@@ -425,6 +431,9 @@ pub struct DeviceData {
 **Code snippet**: [`research/snippets/error/error_propagation.rs`](../research/snippets/error/error_propagation.rs)
 
 ### Error Propagation Overview
+
+Rust replaces C's ad-hoc error conventions (negative errno, NULL pointers, global `errno`) with
+a single, consistent `Result<T, Error>` type. The kernel crate's `Error` type wraps a Linux errno
 integer, so all existing error codes are preserved.
 
 ### The `?` Operator

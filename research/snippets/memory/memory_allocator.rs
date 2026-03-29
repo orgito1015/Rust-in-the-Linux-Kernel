@@ -95,7 +95,10 @@ pub struct AllocationContext;
 impl AllocationContext {
     /// Allocate in process context (can sleep).
     pub fn allocate_process_context() -> Result<Box<[u8; 128]>> {
-        // GFP_KERNEL: normal kernel allocation, may reclaim/sleep
+        // Box::try_new uses GFP_KERNEL by default in the kernel allocator.
+        // GFP_KERNEL: normal kernel allocation, may sleep/reclaim memory.
+        // This flag is baked into the kernel crate's global allocator;
+        // callers in process context should always use Box/Vec for this reason.
         let buf = Box::try_new([0u8; 128])?;
         Ok(buf)
     }
@@ -292,10 +295,33 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_kernel_buffer_bounds() {
-        // This test runs in userspace during development; in-kernel tests
-        // use the KUnit framework.
-        // We can only exercise logic that does not call kernel allocators.
+    fn test_kernel_buffer_size() {
+        // KernelBuffer holds one NonNull<u8> (8 bytes) + one usize (8 bytes).
+        // This test ensures the struct layout is as expected.
+        // In-kernel tests would use the KUnit framework instead.
         assert_eq!(core::mem::size_of::<KernelBuffer>(), 16);
+    }
+
+    #[test]
+    fn test_kernel_buffer_write_read() {
+        let mut buf = KernelBuffer::new(64).expect("allocation failed");
+        buf.write_byte(0, 0xAB);
+        buf.write_byte(63, 0xCD);
+        assert_eq!(buf.read_byte(0), 0xAB);
+        assert_eq!(buf.read_byte(63), 0xCD);
+    }
+
+    #[test]
+    #[should_panic]
+    fn test_kernel_buffer_out_of_bounds_read() {
+        let buf = KernelBuffer::new(8).expect("allocation failed");
+        let _ = buf.read_byte(8); // must panic
+    }
+
+    #[test]
+    #[should_panic]
+    fn test_kernel_buffer_out_of_bounds_write() {
+        let mut buf = KernelBuffer::new(8).expect("allocation failed");
+        buf.write_byte(8, 0xFF); // must panic
     }
 }

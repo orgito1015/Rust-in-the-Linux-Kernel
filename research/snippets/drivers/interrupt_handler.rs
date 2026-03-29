@@ -103,6 +103,10 @@ pub unsafe extern "C" fn simple_irq_handler(
     data: *mut core::ffi::c_void,
 ) -> IrqReturn {
     // SAFETY: data is the dev_id pointer we passed to request_irq.
+    // - The pointer is non-null (the kernel guarantees dev_id is passed as-is).
+    // - SimpleDeviceData was allocated before register_irq and remains valid
+    //   until free_irq is called in the driver's remove path.
+    // - No other mutable reference exists; all fields use atomic operations.
     let dev = &*(data as *const SimpleDeviceData);
 
     // Read a hypothetical hardware status register.

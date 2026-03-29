@@ -183,11 +183,11 @@ fn find_device(_name: &str) -> Result<u32> {
 /// `Result::ok()` converts `Err(_)` → `None`.
 pub fn find_and_validate(haystack: &[u32], needle: u32) -> Result<usize> {
     // `position` returns Option<usize>.
-    // `.ok_or(ENOENT)` converts None → Err(ENOENT).
+    // `.ok_or(ENOENT)` converts None → Err(ENOENT) ("no such entry").
     haystack
         .iter()
         .position(|&x| x == needle)
-        .ok_or(ENODEV)
+        .ok_or(ENOENT)
 }
 
 /// Uses `Option` for nullable pointers and converts to `Result` at the boundary.
